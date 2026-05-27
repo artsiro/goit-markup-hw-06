@@ -1,0 +1,39 @@
+.features-text h3{
+    font-size: 20px;
+    line-height: 1.2;
+    color: #2E2F42;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+.features-text p{
+    color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.features-section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.features-text{
+    display: flex;
+    gap: 24px;
+}
+.features-text li{
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
+.icon-features{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F4FD;
+    height: 112px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}

@@ -1,0 +1,61 @@
+
+body{
+    font-family: "Roboto",sans-serif;
+    background-color: #fff;
+    overflow: auto;
+}ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+h1, h2, h3, p{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ul{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.sr-only {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.span{
+    color: #4D5AE5
+}
+
+.backdrop{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
