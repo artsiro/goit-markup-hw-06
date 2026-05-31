@@ -1,24 +1,19 @@
-/* --- МОБИЛЬНАЯ ВЕРСИЯ (ДО 767px) --- */
-
 .features-section {
     padding-top: 96px;
     padding-bottom: 96px;
 }
 
-/* Флекс-контейнер для всего списка карточек (ul) */
 .features-text {
     display: flex;
     flex-direction: column;
-    row-gap: 72px; /* Вертикальный зазор между карточками на мобилке */
+    row-gap: 72px;
 }
 
-/* Элемент списка (li) — на мобильном занимает всю ширину и центрирует текст */
 .features-li {
     width: 100%;
-    text-align: center;
+    text-align: left; 
 }
 
-/* Обертка для иконок — скрыта по умолчанию на мобилках и планшетах */
 .icon-features {
     display: none;
     align-items: center;
@@ -30,17 +25,15 @@
     margin-bottom: 8px;
 }
 
-/* Заголовки преимуществ */
 .features-li h3 {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.2;
+    line-height: 1.11; 
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-bottom: 8px;
 }
 
-/* Описание преимуществ */
 .features-li p {
     font-weight: 500;
     font-size: 16px;
@@ -54,16 +47,11 @@
         flex-direction: row;
         flex-wrap: wrap;
         column-gap: 24px;
-        row-gap: 64px;    
+        row-gap: 72px;    
     }
 
     .features-li {
         width: calc((100% - 24px) / 2);
-        text-align: left;  
-    }
-       
-    .features-li h3 {
-        line-height: 1.11; 
     }
 }
 
