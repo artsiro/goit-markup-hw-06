@@ -1,39 +1,98 @@
-.features-text h3{
-    font-size: 20px;
-    line-height: 1.2;
-    color: #2E2F42;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
+/* --- МОБИЛЬНАЯ ВЕРСИЯ (ДО 767px) --- */
+
+.features-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
-.features-text p{
-    color: #434455;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-.features-section{
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-.container{
+
+/* Флекс-контейнер для всего списка карточек (ul) */
+.features-text {
     display: flex;
     flex-direction: column;
+    row-gap: 72px; /* Вертикальный зазор между карточками на мобилке */
 }
-.features-text{
-    display: flex;
-    gap: 24px;
+
+/* Элемент списка (li) — на мобильном занимает всю ширину и центрирует текст */
+.features-li {
+    width: 100%;
+    text-align: center;
 }
-.features-text li{
-    flex-basis: calc((100% - 3 * 24px) / 4);
-}
-.icon-features{
-    display: flex;
+
+/* Обертка для иконок — скрыта по умолчанию на мобилках и планшетах */
+.icon-features {
+    display: none;
     align-items: center;
     justify-content: center;
     background-color: #F4F4FD;
     height: 112px;
-    border: 1px solid #8e8f99;
+    border: 1px solid #8E8F99;
     border-radius: 4px;
     margin-bottom: 8px;
+}
+
+/* Заголовки преимуществ */
+.features-li h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    margin-bottom: 8px;
+}
+
+/* Описание преимуществ */
+.features-li p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+@media screen and (min-width: 768px) {
+    .features-text {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 64px;    
+    }
+
+    .features-li {
+        width: calc((100% - 24px) / 2);
+        text-align: left;  
+    }
+       
+    .features-li h3 {
+        line-height: 1.11; 
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .features-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .features-text {
+        flex-wrap: nowrap; 
+        gap: 24px;
+    }
+
+    .features-li {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .icon-features {
+        display: flex;
+    }
+
+    .features-li h3 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    
+    .features-li p {
+        font-weight: 400;
+    }
 }
