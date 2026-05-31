@@ -6,12 +6,11 @@
 .features-text {
     display: flex;
     flex-direction: column;
-    row-gap: 72px;
+    row-gap: 72px; 
 }
 
 .features-li {
     width: 100%;
-    text-align: left; 
 }
 
 .icon-features {
@@ -32,6 +31,7 @@
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-bottom: 8px;
+    text-align: center; 
 }
 
 .features-li p {
@@ -40,6 +40,7 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: left; 
 }
 
 @media screen and (min-width: 768px) {
@@ -52,6 +53,10 @@
 
     .features-li {
         width: calc((100% - 24px) / 2);
+    }
+
+    .features-li h3 {
+        text-align: left;
     }
 }
 
@@ -78,6 +83,7 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
+        text-align: left; 
     }
     
     .features-li p {
